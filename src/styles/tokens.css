@@ -1,0 +1,85 @@
+/* Ninebot Workbench Design Tokens
+ * Verified against @ninebot/pc-styles-black & mfn-developer-console/src/styles/override.scss
+ */
+@font-face {
+  font-display: swap;
+  font-family: "MiSans";
+  src: url("https://oms-oss-public.ninebot.com/website/knowledge/MiSans-Regular.otf") format("opentype");
+}
+
+@theme {
+  /* Brand & Accent */
+  --color-brand: #000000;
+  --color-brand-hover: #4d4d4d;
+  --color-brand-disabled: #808080;
+  --color-accent: #4a4dd4;
+  --color-accent-strong: #2125dc;
+  --color-accent-deep: #4a1fb8;
+  --color-accent-soft: #eff1ff;
+  --color-accent-border: #bdb4fe;
+
+  /* Surfaces */
+  --color-page: #f5f7fa;
+  --color-page-alt: #f2f3f5;
+  --color-surface: #ffffff;
+  --color-subtle: #f4f4f5;
+  --color-subtle-light: #f8f8f8;
+  --color-subtle-hover: #f0f2f5;
+
+  /* Text */
+  --color-ink: #1d2129;
+  --color-ink-regular: #5b5a67;
+  --color-ink-secondary: #535862;
+  --color-ink-muted: #86879c;
+  --color-ink-disabled: #c0c4cc;
+
+  /* Borders */
+  --color-border: #e1e0e5;
+  --color-border-input: #dcdfe6;
+  --color-border-light: #ebeef5;
+  --color-border-hover: #c0c4cc;
+  --color-divider: #d6dae3;
+  --color-divider-dialog: #e0e0e0;
+
+  /* Status */
+  --color-success: #00b42a;
+  --color-success-text: #009a29;
+  --color-success-bg: #e8ffea;
+  --color-success-border: #aff0b5;
+
+  --color-warning: #d25f00;
+  --color-warning-bg: #fff7e8;
+  --color-warning-border: #ffe4ba;
+
+  --color-danger: #cb272d;
+  --color-danger-solid: #f53f3f;
+  --color-danger-bg: #ffece8;
+  --color-danger-border: #fdcdc5;
+
+  --color-info: #909399;
+
+  /* Radii */
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-sub: 4px;
+  --radius-xs: 2px;
+  --radius-pill: 20px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px 0 rgba(31, 35, 41, 0.08);
+  --shadow-control: 0 1px 2px rgba(10, 13, 18, 0.05);
+  --shadow-dialog: 0px 12px 32px 4px rgba(0, 0, 0, 0.04), 0px 8px 20px rgba(0, 0, 0, 0.08);
+
+  /* Typography */
+  --font-sans: "MiSans", "PingFang SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  color: var(--color-ink);
+  background-color: var(--color-page);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
